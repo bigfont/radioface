@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "website", "http://localhost:1506", "{C38BB89B-DA33-46A3-832C-6BDD65B1FFBB}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "radioface", "http://localhost:1455", "{430B4734-E0AD-4CEF-BE45-CCBEE360C7C3}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_1506"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\radioface\website\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1506\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1455"
+		Debug.AspNetCompiler.PhysicalPath = "..\radioface\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1455\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_1506"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\radioface\website\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1506\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1455"
+		Release.AspNetCompiler.PhysicalPath = "..\radioface\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1455\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\..\..\GitHub\radioface\website\"
+		SlnRelativePath = "..\radioface\"
 	EndProjectSection
 EndProject
 Global
@@ -29,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C38BB89B-DA33-46A3-832C-6BDD65B1FFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C38BB89B-DA33-46A3-832C-6BDD65B1FFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430B4734-E0AD-4CEF-BE45-CCBEE360C7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430B4734-E0AD-4CEF-BE45-CCBEE360C7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
