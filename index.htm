@@ -21,8 +21,7 @@
                 <slide ng-repeat="slide in slides" active="slide.active">
                     <img ng-src="{{slide.image}}">
                     <div class="carousel-caption">
-                        <h4>The Radion Face</h4>
-                        <p>{{slide.text}}</p>
+                        <h4>The Radion Face</h4>                        
                     </div>
                 </slide>
             </carousel>
@@ -40,9 +39,9 @@
             var slides;            
             $scope.myInterval = 5000;
             slides = $scope.slides = [
-                { image: '/images/scott39.jpg', text: 'Radio has a new face.' },
-                { image: '/images/scott51.jpg', text: 'The Face of Radio.' },
-                { image: '/images/scott62.jpg', text: 'I\'m Scott Harris - The Radio Face.' }
+                { image: '/images/scott39.jpg',  },
+                { image: '/images/scott51.jpg', },
+                { image: '/images/scott62.jpg', }
             ];
         }
 
