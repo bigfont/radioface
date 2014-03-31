@@ -15,19 +15,20 @@
     <![endif]-->
 </head>
 <body>
-    <div ng-controller="CarouselCtrl">
-        <div>
-            <carousel interval="myInterval">
-                <slide ng-repeat="slide in slides" active="slide.active">
-                    <img ng-src="{{slide.image}}">
-                    <div class="carousel-caption">
-                        <h4>The Radion Face</h4>                        
-                    </div>
-                </slide>
-            </carousel>
+    <div class="container">
+        <div ng-controller="CarouselCtrl">
+            <div>
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}">
+                        <div class="carousel-caption">
+                            <h4>The Radion Face</h4>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
         </div>
     </div>
-
     <!-- Javascript -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
