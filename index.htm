@@ -1,23 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="radio">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Radio Face</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <title>The Radio Face</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>	
-	<img class="img-responsive" src="images/scott39.jpg">
-	<!-- Javascript -->	   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<body>
+    <div ng-controller="CarouselCtrl">
+        <div>
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}">
+                    <div class="carousel-caption">
+                        <h4>Slide</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+
+    <script type="text/Javascript">
+
+        angular.module('radio', ['ui.bootstrap']);
+        function CarouselCtrl($scope) {
+            var slides;            
+            $scope.myInterval = 5000;
+            slides = $scope.slides = [
+                { image: '/images/scott39.jpg', header: '', text: '' },
+                { image: '/images/scott51.jpg', header: '', text: '' },
+                { image: '/images/scott62.jpg', header: '', text: '' }
+            ];
+        }
+
+    </script>
+
 </body>
 </html>
